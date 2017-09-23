@@ -1,30 +1,100 @@
-
 .logo{
-	height : 65px;
-	width: 350px;
-	padding: 10px 0px 6px 40px;
+	position: relative;
+	height : 70px;
+	padding: 20px 0px 0px 0px;
 }
 
-nav ul {
-	background: black;
-	display: inline;
-	padding: 20px 10px 10px 10px;
-	float: left;
+.myPortfolio{
+	font-size: 40px;
+	font-family: 'Montez', cursive;
+	float: right;
+	position: relative;
+	top: -25px;
 }
 
-nav ul li {
-	display: inline-block;
-	color: white;
-	float: left;
-	color: white;
-	margin-left: 10px;
-}	
+.socialMedia {
+	position: relative;
+	top: -40px;
+	left: 820px;
+}
 
-nav ul li a {
-	color: white;
+.socialMediaLogo {
+	width: 42px;
+	height: 42px;
+}
+
+.homeImage {
+	position: relative;
+	left: 100px;
+	width: 387px;
+	height: 381px;
+	border-radius: 25px;
+}
+
+footer {
+	position: relative;
+	top: 100px;
+	right: 10px;
+	padding-bottom: 20px;
+}
+
+footer a{ 
+	float: right;
+	font-size: 20px;
 	text-decoration: none;
+	color: black;
+}
+
+footer p{
+	font-size: 20px;
+}
+
+.active{
+	color: yellow;
 }
 
 body {
-	background: #FFF53B;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	width: 1000px;
+	height: 680px;
+	background-color: #fafad2;
+}
+
+nav ul {
+	position: relative;
+	top: -50px;
+	background-color: black;
+	height: 50px;
+	padding-bottom: 20px;
+}
+
+nav ul li {
+	position: relative;
+	display: inline-block;
+	margin: 27px;
+}
+
+nav ul li a {
+	font-size: 20px;
+	font-family: 'arial', serif;
+	text-decoration: none;
+	color: white;	
+}
+
+nav a::before{
+	content: '';
+	display: block;
+	height: 7px;
+	width: 100%;
+	background-color: #fafad2;
+	position: absolute;
+	top: -28px;
+	width: 0%;
+	transition: ease-in-out 550ms;
+}
+
+Nav a:hover::before {
+	width: 100%;
 }
