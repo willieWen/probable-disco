@@ -8,6 +8,8 @@
 		@import url('https://fonts.googleapis.com/css?family=Montez');
 		@import url('https://fonts.googleapis.com/css?family=Merienda+One');
 		</style>
+		<script src="scripts/jquery-1.7.2.min.js"></script>   
+		<script src="scripts/lightbox.js"></script>    
     </head>
     <body>
         <header>
@@ -22,21 +24,35 @@
         </header>
             <nav>
             <ul>
-                    <li><a  class="active" href="" >Home</a></li>
+                    <li><a class="inactive" href="index.html" >Home</a></li>
                     <li><a class="inactive" href="myDetail.html">My Detail</a></li>
                     <li><a class="inactive" href="interest.html">Interest</a></li>
-                    <li><a class="inactive" href="gallery.html">Gallery</a></li>
+                    <li><a class="active" href="">Gallery</a></li>
                     <li><a class="inactive" href="background.html">Background</a></li>
                     <li><a class="inactive" href="experience.html">Experience</a></li>
                     <li><a class="inactive" href="contact.html">Contact</a></li>
                 </ul>
         </nav>
-        <div class="moto">
-        "The greatest achivement of all is when a system goes from not working to working"<br/> <br />
-		Willy<br />
-		~Mobile Application Developer~
-		</div>
-         <img src="images/myImage.jpg" class="homeImage">
+ <div id="content">
+ <div class="section" id="example">      
+<h2>My Photo Gallery</h2>    
+ <div class="imageRow">      
+ <div class="single">    
+ <a href="images/temple.png" rel="lightbox" title="China bridge"><img src="images/temple2.png" alt="china" style="border:2px solid grey"/></a>             
+ <a href="images/bridge.png" rel="lightbox" title="China Temple"><img src="images/bridge2.png" alt="china1" style="border:2px solid grey"/></a>     
+ <a href="images/hkg.png" rel="lightbox" title="Hkg Disneyland"><img src="images/hkg2.png" alt="hkg" style="border:2px solid grey" /></a>             
+ </div>     
+ </div> <br /> <br /> 
+ <h2>My Application Portfolio</h2> <br /> 
+ <div class="imageRow">      
+ <div class="single">    
+ <a href="images/alpha1.png" rel="lightbox" title="Alpha Homepage"><img src="images/alpha1s.png" alt="alpha1" style="border:2px solid grey" /></a>             
+ <a href="images/beta.png" rel="lightbox" title="Alpha LoggedIn" style="border:2px solid grey"><img src="images/betas.png" alt="beta1" /></a>     
+ <a href="images/totsamour.jpg" rel="lightbox" title="Totsamour App"><img src="images/totsamourS.jpg" alt="totsamour1" style="border:2px solid grey" /></a>             
+ </div>     
+ </div> 
+ </div> 
+ </div> 
         <footer>
         <a href="siteMap.html">Site Map</a>
         <p>&copy; Willy - 30330519</p>

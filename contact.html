@@ -8,6 +8,20 @@
 		@import url('https://fonts.googleapis.com/css?family=Montez');
 		@import url('https://fonts.googleapis.com/css?family=Merienda+One');
 		</style>
+		<script>
+		function validateForm() {
+		var validname = document.forms["myForm"] ["name"].value;
+		var validemail = document.forms["myForm"] ["email"].value;
+		    if (validname == "" || validemail =="" ) {
+		        document.getElementById('jsname').innerHTML = '* Full Name';
+		         document.getElementById('jsemail').innerHTML = '* Email';
+		        alert("Name and / or Email must be filled out") ;
+		        return false;
+		    } else {
+		    alert("Thankyou for your enquiry, I will get back to you soon!") ;
+		    }
+		}
+		</script>
     </head>
     <body>
         <header>
@@ -22,25 +36,40 @@
         </header>
             <nav>
             <ul>
-                    <li><a  class="active" href="" >Home</a></li>
+                    <li><a  class="inactive" href="index.html" >Home</a></li>
                     <li><a class="inactive" href="myDetail.html">My Detail</a></li>
                     <li><a class="inactive" href="interest.html">Interest</a></li>
                     <li><a class="inactive" href="gallery.html">Gallery</a></li>
                     <li><a class="inactive" href="background.html">Background</a></li>
                     <li><a class="inactive" href="experience.html">Experience</a></li>
-                    <li><a class="inactive" href="contact.html">Contact</a></li>
+                    <li><a class="active" href="">Contact</a></li>
                 </ul>
         </nav>
-        <div class="moto">
-        "The greatest achivement of all is when a system goes from not working to working"<br/> <br />
-		Willy<br />
-		~Mobile Application Developer~
-		</div>
-         <img src="images/myImage.jpg" class="homeImage">
-        <footer>
+        <footer class="contactFooter">
         <a href="siteMap.html">Site Map</a>
         <p>&copy; Willy - 30330519</p>
         </footer>
+        <section class="contactSection">
+        <img src="images/contact.png" class="contact" alt="contactLogo">
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+        <h1>Contact Form</h1>
+        <label>
+        <p id="jsname">Full Name</p>
+        <input type="text" class="input_text" name="name" id="name" />
+        </label>
+        <label>
+        <p id="jsemail">Email</p>
+        <input type="text" class="input_text" name="email" id="email" />
+        </label>
+        <label>
+        <p>About</p>
+        <textarea class="about" name="feedback" id="feedback"></textarea>
+        </label>
+        <label>
+        <input type="submit" class="button" value="Send" />
+        </label>
+        </div>
+        </section>
     </body>
 </html>
  
